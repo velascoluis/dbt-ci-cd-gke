@@ -1,6 +1,6 @@
 # Google Kubernetes Engine - GitHub Actions
 
-Example workflow that uses [GitHub Actions][actions] to deploy [a static
+This Example workflow that uses [GitHub Actions][actions] to deploy [a static
 website](site/) to an existing [Google Kubernetes Engine][gke] cluster.
 
 This code is intended to be an _example_. You will likely need to change or
