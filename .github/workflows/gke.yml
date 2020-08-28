@@ -7,7 +7,7 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT }}
-  GKE_CLUSTER: cluster-1    
+  GKE_CLUSTER: gke-cluster 
   GKE_ZONE: us-central1-c   
   DEPLOYMENT_NAME: gke-cluster 
   IMAGE: dbt-image
