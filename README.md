@@ -3,6 +3,7 @@
 This example workflow  uses [GitHub Actions][actions] to deploy [a dbt
 ETL pipeline](dbtexp/) to an existing [Google Kubernetes Engine][gke] cluster.
 
+![Diagram](dbtexp/assets/diagram.png)
 
 ## CICD Workflow description
 
