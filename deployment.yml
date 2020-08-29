@@ -26,13 +26,12 @@ spec:
   template:
     metadata:
       labels:
-        app: gke-test
+        app: gke-dbt
     spec:
       containers:
-      - name: gke-test
+      - name: gke-dbt
         image: gcr.io/PROJECT_ID/IMAGE:TAG
-        ports:
-        - containerPort: 5000
+        command: ["dbt", "run"]
         resources:
           requests:
             cpu: 100m
