@@ -26,10 +26,10 @@ spec:
   template:
     metadata:
       labels:
-        app: gke-dbt
+        app: gke-dbt-app
     spec:
       containers:
-      - name: gke-dbt
+      - name: gke-dbt-container
         image: gcr.io/PROJECT_ID/IMAGE:TAG
         command: ["dbt", "run"]
         resources:
