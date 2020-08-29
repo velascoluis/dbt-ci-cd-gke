@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+    - name: avg_signal
+      description: "Average signal strenght by town"
+      columns:
+          - name: town_name
+            description: "Town name"
+            tests:
+                - unique
+                - not_null
