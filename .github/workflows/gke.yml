@@ -9,7 +9,8 @@ env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT }}
   GKE_CLUSTER: gke-cluster 
   GKE_ZONE: us-central1-c   
-  DEPLOYMENT_NAME: gke-dbt 
+  DEPLOYMENT_NAME: gke-dbt
+  BQ_DATASET_ID: warehouse
   IMAGE: dbt-image
 
 jobs:

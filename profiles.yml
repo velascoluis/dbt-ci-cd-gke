@@ -1,0 +1,13 @@
+prod:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: "{{ env_var('PROJECT_ID') }}" 
+      dataset: "{{ env_var('BQ_DATASET_ID') }}"
+      threads: 8 
+      keyfile: "{{ env_var('DBT_GOOGLE_BIGQUERY_KEYFILE', 'keyfile.json') }}"
+      timeout_seconds: 300
+      location: US 
+      priority: interactive
