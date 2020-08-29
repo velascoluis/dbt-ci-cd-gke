@@ -23,8 +23,8 @@ spec:
             cpu: 100m
           limits:
             cpu: 100m
-        env:
-        - name: GCP_PROJECT_ID
-            value: $PROJECT_ID
-        - name: GCP_BQ_DATASET_ID
-            value: $BQ_DATASET_ID
+      env:
+      - name: GCP_PROJECT_ID
+        value: $PROJECT_ID
+      - name: GCP_BQ_DATASET_ID
+        value: $BQ_DATASET_ID
