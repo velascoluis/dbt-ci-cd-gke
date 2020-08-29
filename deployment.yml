@@ -25,6 +25,6 @@ spec:
             cpu: 100m
         env:
         - name: GCP_PROJECT_ID
-          value: $PROJECT_ID
+          value: velascoluis-test 
         - name: GCP_BQ_DATASET_ID
-          value: $BQ_DATASET_ID
+          value: warehouse 
