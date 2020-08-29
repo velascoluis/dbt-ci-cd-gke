@@ -37,7 +37,10 @@ jobs:
     # Get the GKE credentials so we can deploy to the cluster
     - run: |-
         gcloud container clusters get-credentials "$GKE_CLUSTER" --zone "$GKE_ZONE"
-
+    - run: 'echo "$KEYFILE" > keyfile.json'
+      shell: bash
+      env:
+	KEYFILE: ${{secrets.DBT_SA_KEY}}
     # Build the Docker image
     - name: Build
       run: |-
